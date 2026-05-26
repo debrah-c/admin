@@ -1,0 +1,138 @@
+body{
+    font-family:Roboto Mono;
+}
+.main-container{
+    display:grid;
+    width:80%;
+    height:100%;
+}
+.header{
+    grid-area: 1/2/2/4;
+    background-color:white;
+    padding:30px;
+}
+.search-bar{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.profile{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.picture{
+    display:flex;
+    flex-direction: row;
+}
+.actions{
+    display:flex;
+    flex-direction: row;
+    list-style:none;
+    justify-content: space-around;
+    gap:10px;
+}
+button{
+    background-color: blue;
+    color:white;
+    padding:8px 15px;
+    border-radius: 30%;
+}
+.sidebar{
+    grid-area:1/1/4/2;
+    background-color:rgb(10, 10, 231);
+    color:white;
+    padding:30px;   
+}
+.links{
+    gap:10px;
+    font-weight: 600;
+    padding:20px;
+    list-style: none;
+}
+
+.help{
+    gap:10px;
+    font-weight:900;
+    padding:20px;
+    list-style: none;
+}
+.links li,
+.help li{
+    margin-bottom: 20px;
+}
+.article{
+    grid-area:2/2/4/3;
+    background-color: ghostwhite;
+}
+.cards{
+    display:grid;
+    text-align: center;
+    gap:30px;
+    grid-template-columns: 1fr 1fr;
+    padding:1opx;
+    margin:20px;
+}
+.card{
+    background-color:white;
+    font-weight:400;
+    padding:40px;
+    border-left:10px solid rgb(226, 138, 24);
+
+}
+.title{
+    font-weight: bold;
+}
+.big-box{
+    padding:10px;
+    margin:5px;
+}
+.article h3{
+    padding:5px;
+}
+.container{
+    grid-area:2/3/4/4 ;
+    padding:20px;
+    gap:20px;
+    background-color: ghostwhite;   
+}
+.announcements{
+    display:grid;
+    margin:2px;
+    background-color:white;
+    padding:20px;
+}
+.trending{
+    display:grid;
+    margin:2px;
+    padding:20px;
+    background-color:white;
+    list-style: none;
+}
+.sites li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  list-style: none;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f0f0f0;
+}
+
+.sites li span {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.sites li p {
+  font-size: 12px;
+  color: gray;
+  margin: 0;
+}
